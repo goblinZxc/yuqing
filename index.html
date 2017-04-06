@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>百度舆情</title>
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/index.css">
+<style>
+.section1 { background: url(images/1.jpg) 50%;}
+.section2 { background: url(images/2.jpg) 50%;}
+.section3 { background: url(images/3.jpg) 50%;}
+.section4 { background: url(images/4.jpg) 50%;}
+</style>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script src="js/index.js"></script>
+
+</head>
+
+<body>
+<div class="Nav">
+	<div class="nav">
+		<a class="logo" href=""></a>
+		<div class="home">
+			<a class="shouye" href="">首页</a>
+			<a href="">产品介绍</a>
+			<a href="">用户版</a>
+		</div>
+		<div class="right">
+			<a class="apply" href="">申请试用</a>
+			<a href="">联系我们</a>
+			<a href="">百度司南</a>
+			<a href="" class="phone">
+				手机客户端
+				<div></div>
+			</a>
+		</div>
+	</div>
+</div>
+<div id="dowebok">
+	<div class="section section1">
+		<div class="container">
+			<div class="center">
+				<div class="top">
+					<div class="cloud1"></div>
+				</div>
+				<div class="middle">
+					<div class="cloud2"></div>
+				</div>
+				<div class="bottom">
+					<div class="cloud3"></div>
+				</div>
+				<div class="left"></div>
+				<div class="right">
+					<ul class="right-top">
+						<li class="man">
+							<span></span>
+							<input type="text" value="用户名">
+						</li>
+						<li class="gass">
+							<span></span>
+							<input type="text" value="密码">
+						</li>
+						<li class="yz">
+							<input type="text" value="验证码">
+							<img src="images/5.jpg" alt="">
+							<a href="">换一张</a>
+						</li>
+					</ul>
+					<ul class="sign">
+						<li class="dl"><a href="">登录</a></li>
+						<li class="right-foot">
+							<span></span>
+							<a href="" class="wz">安全控件常见问题</a>
+							<a href="" class="wz1">忘记密码</a>
+						</li>
+					</ul>
+				</div>
+				<div class="flight"></div>
+			</div>
+		</div>
+		<div class="section-foot">
+			<div class="inner">
+				<img src="images/6.png" alt="" class="picture1">
+				<img src="images/7.png" alt="" class="picture2">
+				<img src="images/8.png" alt="" class="picture3">
+				<img src="images/10.png" alt="" class="picture4">
+				<img src="images/11.png" alt="" class="picture5 square6">
+			</div>
+		</div>
+	</div>
+	<div class="section section2">
+		<img src="images/2.jpg" alt="">
+		<div class="box">
+			<div class="box-left">
+				<img src="images/12.png" alt="">
+				<h4>数据收集与处理</h4>
+				<p>
+					15年专业数据收集与语义分析极技术积累<br>卓越极致，不断攀登
+				</p>
+			</div>
+			<div class="box-right ">
+				
+			</div>
+		</div>
+		<div class="section2-foot">
+			<div class="square1" ></div>
+			<div class="square2" ></div>
+			<div class="square3" ></div>
+			<div class="square4" ></div>
+			<div class="square5" ></div>
+			<div class="square6" ></div>
+			
+		</div>
+	</div>
+
+
+
+	<div class="section section3">
+		<img src="images/17.jpg" alt="" class="section3-top">
+		<div class="box1">
+			<div class="box1-left" style="z-index:5">
+				<img src="images/16.png" alt="" >
+				<h4>舆情分析逻辑与架构</h4>
+				<p>
+					声量诊断、传播分析、情感提炼、受众画像<br>有方法论，更有智慧
+				</p>
+			</div>
+			<div class="box1-right"></div>
+			
+			<div class="hz1"></div>
+			<div class="hz2"></div>
+			<div class="hz3"></div>
+			<div class="hz4"></div>
+			<div class="hz5"></div>
+			
+		</div>
+		<div class="section2-foot">
+			<div class="square6" ></div>
+		</div>
+		
+		<img src="images/14.png" alt="" class="section3-foot">
+	</div>
+	<div class="section section4">
+		
+		<div class="box1">
+			<div class="box1-left" style="z-index:5">
+				<img src="images/19.png" alt="" >
+				<h4>专业数据可视化</h4>
+				<p>
+					非凡的数据洞悉和可视化能力<br>精研数据，惊艳可见
+				</p>
+			</div>
+			<div class="box2-right"></div>
+			<div class="yuan">
+				<img src="images/21.png" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		'navigation':true,
+		'navigationTooltips':["登录百度舆情","领先，数据收集预处理","全面：舆情分析与架构","专业：专业数据可视化"]
+	});
+});
+$(".square6").click(function(){
+	$.fn.fullpage.moveSectionDown()
+})
+</script>
+</html>
